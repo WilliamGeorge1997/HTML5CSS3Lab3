@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Submit User Data</h1>
+    <main>
+      <section>
+        <form action="./users.html">
+          <div>
+            <label for="name">Name:</label>
+            <br />
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+              pattern="^[a-zA-Z]{2,10}$"
+            />
+            <span class="error">Please enter name of 2 - 10 characters</span>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <span class="error">Please enter a valid email address </span>
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <br />
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+              required
+            />
+            <span class="error">Please enter a valid password of minimum 8 characters one lowercase, one uppercase and one digit atleast</span>
+          </div>
+          <div>
+            <label for="age">Age:</label>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter your age"
+              reguired
+              id="age"
+              pattern="^([1-9][0-9]|100)$"
+            />
+            <span class="error">Please enter a valid age from 10 - 100</span>
+          </div>
+          <div id="buttonContainer"><button id="submit" type="button">Submit</button></div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

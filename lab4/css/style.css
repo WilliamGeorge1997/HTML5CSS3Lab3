@@ -1,0 +1,12 @@
+img{
+  width: 100%;
+  position: relative;
+}
+h1{
+  font-family: 'Overlock SC', sans-serif;
+  text-shadow: 5px 5px 10px #00FF00;;
+  position: absolute;
+  bottom: 100px;
+  left: 190px;
+  
+}

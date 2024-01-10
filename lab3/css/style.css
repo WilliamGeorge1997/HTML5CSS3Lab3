@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin: auto;
+}
+form > div {
+	margin: 18px;
+	/* position: relative; */
+}
+
+form > div > input {
+	width: 96%;
+	border: 1px solid #ccc;
+	padding: 10px;
+    border-radius: 5px;
+}
+
+form > div > span.error {
+    display: none;
+    font-size: 0.8em;
+    /* position: absolute; */
+}
+form > div > input:focus{
+    outline: rgb(55, 148, 230) 2px solid;
+}
+form > div >input:valid:not(:focus):not(:placeholder-shown){
+    border: 2px solid rgb(0, 215, 0);
+
+}
+form > div >input:invalid:not(:focus):not(:placeholder-shown){
+    border: 2px solid red;
+}
+form > div >input:invalid:not(:focus):not(:placeholder-shown) ~ .error {
+    display: block;
+    color: red;
+}
+
+
+form button[type="button"] {
+	width: 30%;
+	margin-top: 18px;
+	background-color: #41D873;
+	color: white;
+	padding:13px;
+    border:none !important;
+    transition: 0.3s;
+   
+
+}
+
+#buttonContainer{
+    text-align: center;
+}
+form button[type="button"]:hover{
+    background-color: #006823;
+}
